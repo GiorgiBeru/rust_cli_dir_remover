@@ -1,0 +1,9 @@
+[package]
+name = "rust_cli_dir_remover"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.4"
+ignore = "0.4"
+
