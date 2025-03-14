@@ -126,13 +126,6 @@ fn calculate_dir_size(path: &Path) -> Result<u64, io::Error> {
     
     Ok(total_size)
 }
-//TODO: add fn for git tracking detection
-// fn -> add git tracks directory to remove check -> if .git file in root directory and target directory not in .gitignore then tracks
-// fn is_git_repo(path: &Path) -> bool {
-//     match Repository::open(path) {
-//         Ok(_) => true,
-//         Err(_) => false,
-//     }
-// }
+//TODO: use .gitignore as source + behave as gitignore, support syntax, remove inside while leaving the directory etc
 
 //TODO: add flag verbose with dbg! macros for debugging
